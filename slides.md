@@ -17,7 +17,7 @@ fonts:
 
 <div class="relative z-10 flex flex-col items-center justify-center h-full">
 
-<div class="text-xs uppercase tracking-widest opacity-50 mb-4">NYSC CDS Talk · 2025</div>
+<div class="text-xs uppercase tracking-widest opacity-50 mb-4">NYSC CDS Talk · 2026</div>
 
 # CVs, Cover Letters<br>& Online Safety
 
@@ -98,13 +98,6 @@ transition: slide-up
   </div>
 </div>
 
-<div v-click class="flex gap-3 items-start rounded-xl p-4 border border-yellow-500/40 bg-yellow-900/10">
-  <div class="text-3xl leading-none mt-1">🎁</div>
-  <div>
-    <div class="font-bold text-yellow-300 text-base">Raffle Draw</div>
-    <div class="text-xs opacity-60 mt-1">Prizes for active participants — stay till the end!</div>
-  </div>
-</div>
 
 </div>
 
@@ -652,37 +645,6 @@ transition: fade
   Stay consistent. Stay safe. Go get that bag after NYSC. 🚀
 </div>
 </v-click>
-
----
-layout: center
-class: text-center
----
-
-# 🎁 Raffle Draw!
-
-<div class="text-xs opacity-50 mt-2">Winners drawn from participants who submitted questions in the WhatsApp group</div>
-
-<div class="grid grid-cols-3 gap-4 mt-8 text-sm max-w-2xl mx-auto">
-
-<div v-click class="rounded-xl p-5 border border-yellow-400/50 bg-yellow-900/15">
-  <div class="text-3xl mb-2">🥇</div>
-  <div class="font-bold text-yellow-300 mb-1">1st Prize</div>
-  <div class="text-xs opacity-60">LinkedIn Learning Premium — 1 month</div>
-</div>
-
-<div v-click class="rounded-xl p-5 border border-gray-400/40 bg-gray-800/20">
-  <div class="text-3xl mb-2">🥈</div>
-  <div class="font-bold text-gray-300 mb-1">2nd Prize ×2</div>
-  <div class="text-xs opacity-60">Professional CV Review Vouchers</div>
-</div>
-
-<div v-click class="rounded-xl p-5 border border-orange-400/50 bg-orange-900/15">
-  <div class="text-3xl mb-2">🥉</div>
-  <div class="font-bold text-orange-300 mb-1">3rd Prize ×3</div>
-  <div class="text-xs opacity-60">Data bundles — job hunting eats data</div>
-</div>
-
-</div>
 
 ---
 layout: center
