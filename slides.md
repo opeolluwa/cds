@@ -48,42 +48,6 @@ transition: fade
 
 
 ---
-layout: default
-transition: slide-up
----
-
-# Today's Agenda
-
-<div class="grid grid-cols-2 gap-4 mt-6">
-
-<div v-click class="flex gap-3 items-start rounded-xl p-4 border border-blue-500/40 bg-blue-900/10">
-  <div class="text-3xl leading-none mt-1">📄</div>
-  <div>
-    <div class="font-bold text-blue-300 text-base">CVs</div>
-    <div class="text-xs opacity-60 mt-1">3 types · ATS explained · The Google XYZ formula</div>
-  </div>
-</div>
-
-<div v-click class="flex gap-3 items-start rounded-xl p-4 border border-green-500/40 bg-green-900/10">
-  <div class="text-3xl leading-none mt-1">✉️</div>
-  <div>
-    <div class="font-bold text-green-300 text-base">Cover Letters</div>
-    <div class="text-xs opacity-60 mt-1">Why they matter · 4-para structure · Brag with proof</div>
-  </div>
-</div>
-
-<div v-click class="flex gap-3 items-start rounded-xl p-4 border border-red-500/40 bg-red-900/10">
-  <div class="text-3xl leading-none mt-1">🔐</div>
-  <div>
-    <div class="font-bold text-red-300 text-base">Online Safety</div>
-    <div class="text-xs opacity-60 mt-1">Phishing · RATs · Fake portals · How to stay protected</div>
-  </div>
-</div>
-
-
-</div>
-
----
 layout: two-cols
 transition: slide-up
 ---
@@ -96,7 +60,7 @@ transition: slide-up
 
 **Adefemi Adeoye · @opeolluwa**
 
-Electrical Engineering graduate, software engineer, and open-source contributor — nearly a decade building production systems and working with teams across Nigeria and internationally.
+Electrical Engineering graduate, software engineer, and open-source contributor — nearly five of building production systems and working with teams across Nigeria, Europe, and internationally.
 
 </div>
 
@@ -141,6 +105,42 @@ Today you get the shortcut.
   <div class="font-semibold">@opeolluwa</div>
   <div class="opacity-50 text-xs mt-1">GitHub · YouTube · X/Twitter</div>
 </div>
+
+</div>
+
+---
+layout: default
+transition: slide-up
+---
+
+# Today's Agenda
+
+<div class="grid grid-cols-2 gap-4 mt-6">
+
+<div v-click class="flex gap-3 items-start rounded-xl p-4 border border-blue-500/40 bg-blue-900/10">
+  <div class="text-3xl leading-none mt-1">📄</div>
+  <div>
+    <div class="font-bold text-blue-300 text-base">CVs</div>
+    <div class="text-xs opacity-60 mt-1">3 types · ATS explained · The Google XYZ formula</div>
+  </div>
+</div>
+
+<div v-click class="flex gap-3 items-start rounded-xl p-4 border border-green-500/40 bg-green-900/10">
+  <div class="text-3xl leading-none mt-1">✉️</div>
+  <div>
+    <div class="font-bold text-green-300 text-base">Cover Letters</div>
+    <div class="text-xs opacity-60 mt-1">Why they matter · 4-para structure · Brag with proof</div>
+  </div>
+</div>
+
+<div v-click class="flex gap-3 items-start rounded-xl p-4 border border-red-500/40 bg-red-900/10">
+  <div class="text-3xl leading-none mt-1">🔐</div>
+  <div>
+    <div class="font-bold text-red-300 text-base">Online Safety</div>
+    <div class="text-xs opacity-60 mt-1">Phishing · RATs · Fake portals · How to stay protected</div>
+  </div>
+</div>
+
 
 </div>
 
