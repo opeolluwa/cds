@@ -45,25 +45,7 @@ transition: fade
 
 <div class="text-3xl font-bold">Good afternoon, corps members! 👋</div>
 
-<div class="mt-8 text-lg opacity-70">Quick show of hands before we start —</div>
 
-<v-click>
-<div class="mt-6 text-xl font-semibold text-blue-300">
-  🙋 Raise your hand if you've sent out a CV in the last 3 months.
-</div>
-</v-click>
-
-<v-click>
-<div class="mt-5 text-xl font-semibold text-yellow-300">
-  🙋 Keep it up if you're 100% sure it was your best work.
-</div>
-</v-click>
-
-<v-click>
-<div class="mt-5 text-base opacity-60 italic">
-  That's exactly why we're here.
-</div>
-</v-click>
 
 ---
 layout: default
@@ -114,16 +96,15 @@ transition: slide-up
 
 **Adefemi Adeoye · @opeolluwa**
 
-Backend & full-stack engineer, FUNAAB alumnus, and open-source contributor — nearly a decade building production systems and working with teams across Nigeria and internationally.
+Electrical Engineering graduate, software engineer, and open-source contributor — nearly a decade building production systems and working with teams across Nigeria and internationally.
 
 </div>
 
 <div v-click>
 
-**In the global Rust community:**
-- Editor, **This Week in Rust** — the biggest Rust newsletter worldwide
-- **RustConf 2026** Programme Committee member
-- Contributor to Rust ecosystem crates (Leptos and more)
+**What I do:**
+- Software engineer working on backend systems and developer tooling
+- Active in global open-source communities — contributor, editor, and programme committee member
 
 </div>
 
@@ -144,15 +125,15 @@ Today you get the shortcut.
 <div class="ml-8 mt-4 space-y-3">
 
 <div v-click class="rounded-xl p-4 border border-white/10 bg-white/5 text-sm">
-  <div class="text-2xl mb-1">🦀</div>
-  <div class="font-semibold">Rust · Backend · Full-Stack</div>
-  <div class="opacity-50 text-xs mt-1">Distributed systems · Developer tooling</div>
+  <div class="text-2xl mb-1">⚡</div>
+  <div class="font-semibold">Electrical Engineering · Software</div>
+  <div class="opacity-50 text-xs mt-1">FUNAAB · Backend · Full-Stack</div>
 </div>
 
 <div v-click class="rounded-xl p-4 border border-white/10 bg-white/5 text-sm">
   <div class="text-2xl mb-1">🌍</div>
   <div class="font-semibold">Open Source · Global Community</div>
-  <div class="opacity-50 text-xs mt-1">This Week in Rust · RustConf 2026</div>
+  <div class="opacity-50 text-xs mt-1">Editor · Conference Programme Committee</div>
 </div>
 
 <div v-click class="rounded-xl p-4 border border-white/10 bg-white/5 text-sm">
@@ -497,6 +478,116 @@ layout: section
 <div v-click class="rounded-xl p-4 border border-orange-400/40 bg-orange-900/10">
   <div class="font-bold text-orange-300 text-sm mb-2">🌐 Typo-Squatting</div>
   <div class="text-xs opacity-60">Fake sites: <code>linkdin.com</code>, <code>jobberman.ng.co</code>, <code>andelaa.com</code>. You think you're applying. You're handing your data to a scammer.</div>
+</div>
+
+</div>
+
+---
+transition: slide-up
+---
+
+# Phishing & Worms — A Closer Look
+
+<div class="grid grid-cols-2 gap-5 mt-4 text-sm">
+
+<div>
+
+<div v-click class="rounded-xl p-4 border border-red-400/40 bg-red-900/10 mb-4">
+  <div class="font-bold text-red-300 mb-2">🎣 How Phishing Works</div>
+  <div class="text-xs opacity-70 leading-relaxed">Attacker crafts a message that looks legitimate — a job offer, interview invite, or HR portal link. You click. They either harvest your credentials on a fake login page, or silently drop malware on your device.</div>
+</div>
+
+<div v-click class="rounded-xl p-4 border border-red-500/30 bg-red-900/15 text-xs mt-3">
+  <div class="font-semibold text-red-300 mb-2">Real-Looking Subject Lines Used by Scammers</div>
+  <div class="space-y-1 opacity-70 font-mono">
+    <div>"Your application to GTBank has been reviewed"</div>
+    <div>"Urgent: Complete your Andela onboarding"</div>
+    <div>"You've been shortlisted — confirm your slot"</div>
+    <div>"Action required: verify your NYSC portal"</div>
+  </div>
+</div>
+
+</div>
+
+<div>
+
+<div v-click class="rounded-xl p-4 border border-orange-400/40 bg-orange-900/10 mb-4">
+  <div class="font-bold text-orange-300 mb-2">🐛 Worms — Self-Spreading Malware</div>
+  <div class="text-xs opacity-70 leading-relaxed space-y-2">
+    <div>Unlike a virus, a worm needs <strong>no action from you</strong> after the first infection. It copies itself across your contacts, shared drives, and connected devices automatically.</div>
+    <div><strong>Job-hunt vector:</strong> You open a "CV template.docx" sent by a "career coach." The worm quietly emails itself to everyone in your Gmail contacts.</div>
+  </div>
+</div>
+
+<div v-click class="rounded-xl p-4 border border-orange-500/30 bg-orange-900/15 text-xs">
+  <div class="font-semibold text-orange-300 mb-2">RAT — Remote Access Trojan</div>
+  <div class="opacity-70 space-y-1">
+    <div>· Full access to your screen and files</div>
+    <div>· Records every keystroke — including passwords</div>
+    <div>· Can activate your camera and microphone silently</div>
+    <div>· Often hidden inside "offer letter" PDFs or ZIP attachments</div>
+  </div>
+</div>
+
+</div>
+
+</div>
+
+---
+transition: slide-up
+---
+
+# Viruses, Typo-Squatting & More
+
+<div class="grid grid-cols-2 gap-5 mt-4 text-sm">
+
+<div>
+
+<div v-click class="rounded-xl p-4 border border-purple-400/40 bg-purple-900/10 mb-4">
+  <div class="font-bold text-purple-300 mb-2">🦠 Viruses — Attach & Corrupt</div>
+  <div class="text-xs opacity-70 leading-relaxed space-y-2">
+    <div>A virus attaches itself to a legitimate file. When you open the file, the virus runs. It can delete files, corrupt your OS, or use your device to attack others.</div>
+    <div><strong>Common delivery:</strong> Cracked MS Office, "free CV templates" from random sites, pirated software with a bundled installer.</div>
+  </div>
+</div>
+
+<div v-click class="rounded-xl p-4 border border-yellow-400/40 bg-yellow-900/10 text-xs">
+  <div class="font-semibold text-yellow-300 mb-2">📄 Malicious PDFs & Image Files</div>
+  <div class="opacity-70 space-y-1">
+    <div>· Embedded JavaScript that runs on open</div>
+    <div>· Hidden links disguised as QR codes</div>
+    <div>· "Offer letter.pdf" that auto-downloads a payload</div>
+    <div>· JPG or PNG files with steganographic malware</div>
+  </div>
+</div>
+
+</div>
+
+<div>
+
+<div v-click class="rounded-xl p-4 border border-red-400/40 bg-red-900/10 mb-4">
+  <div class="font-bold text-red-300 mb-2">🌐 Typo-Squatting — Fake Portals</div>
+  <div class="text-xs opacity-70 leading-relaxed mb-3">Scammers register domains that look almost identical to real job sites. You type the URL slightly wrong — or click a link in an email — and land on a pixel-perfect fake.</div>
+  <div class="font-mono text-xs space-y-1">
+    <div class="text-green-400">✅ jobberman.com</div>
+    <div class="text-red-400">❌ jobberman.ng.co &nbsp;·&nbsp; j0bberman.com</div>
+    <div class="text-green-400">✅ linkedin.com</div>
+    <div class="text-red-400">❌ linkdin.com &nbsp;·&nbsp; linkedln.com</div>
+    <div class="text-green-400">✅ andela.com</div>
+    <div class="text-red-400">❌ andelaa.com &nbsp;·&nbsp; andela-apply.com</div>
+  </div>
+</div>
+
+<div v-click class="rounded-xl p-3 border border-white/10 bg-white/5 text-xs">
+  <div class="font-semibold mb-1">How to verify before you enter credentials</div>
+  <div class="opacity-60 space-y-1">
+    <div>· Check the padlock — but know it's not enough alone</div>
+    <div>· Type the URL yourself; don't copy from emails</div>
+    <div>· Search the company on Google; click the official result</div>
+    <div>· If unsure — close the tab. Find it another way.</div>
+  </div>
+</div>
+
 </div>
 
 </div>
