@@ -1,637 +1,689 @@
 ---
-# try also 'default' to start simple
 theme: seriph
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
 background: https://cover.sli.dev
-# some information about your slides (markdown enabled)
-title: Welcome to Slidev
+title: "NYSC CDS Talk: Mastering Your Job Hunt – CVs, Cover Letters & Staying Safe Online"
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
-# apply UnoCSS classes to the current slide
+  NYSC CDS Talk covering CV writing, cover letters, and online safety for job seekers.
 class: text-center
-# https://sli.dev/features/drawing
 drawings:
   persist: false
-# slide transition: https://sli.dev/guide/animations.html#slide-transitions
 transition: slide-left
-# enable Comark Syntax: https://comark.dev/syntax/markdown
-comark: true
-# duration of the presentation
-duration: 35min
+duration: 60min
 ---
 
-# Welcome to Slidev
+# Mastering Your Job Hunt
 
-Presentation slides for developers
+**CVs, Cover Letters & Staying Safe Online**
 
-<div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
-  Press Space for next page <carbon:arrow-right />
+<div class="text-lg opacity-70 mt-4">NYSC CDS Talk · ~45–60 mins + Q&A + Raffle</div>
+
+<div @click="$slidev.nav.next" class="mt-12 py-1 cursor-pointer" hover:bg="white op-10">
+  Press Space to begin <carbon:arrow-right class="inline" />
 </div>
 
-<div class="abs-br m-6 text-xl">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="slidev-icon-btn">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
-    <carbon:logo-github />
-  </a>
+---
+layout: center
+class: text-center
+transition: fade-out
+---
+
+# Good afternoon, corps members! 👋
+
+Before we dive in — raise your hand if you've sent out a CV in the last 3 months.
+
+<v-click>
+
+Now raise your hand if you're **not 100% sure** it was the best version it could be.
+
+</v-click>
+
+<v-click>
+
+That's exactly why we're here today.
+
+</v-click>
+
+---
+layout: two-cols
+transition: slide-up
+---
+
+# Meet Your Speaker
+
+<div class="text-sm leading-relaxed mt-4">
+
+**Software Engineer · ~10 Years in the Industry**
+
+I've been writing code and building products for nearly a decade — working with teams spread across Nigeria, Europe, and North America. Remote teams, on-site teams, startups, and scale-ups.
+
+In that time I've:
+- Reviewed **hundreds** of CVs and cover letters
+- Sat on **both sides** of the hiring table
+- Watched great candidates get filtered out by bad formatting
+- And yes — I've also made every mistake I'm about to warn you about
+
 </div>
 
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
+::right::
+
+<div class="mt-8 ml-8 text-sm leading-relaxed opacity-80">
+
+**Why I care about this talk:**
+
+After NYSC, I didn't have a mentor walking me through the job hunt. I figured most of it out the hard way.
+
+You don't have to.
+
+That's the whole point of today — to give you the shortcut I wish I had.
+
+</div>
+
+---
+transition: slide-left
+---
+
+# What We're Covering Today
+
+<div class="grid grid-cols-2 gap-6 mt-6">
+
+<div v-click>
+
+### 📄 CVs
+- The 3 types and when to use each
+- The Google XYZ formula
+- What ATS is doing to your application
+
+</div>
+
+<div v-click>
+
+### ✉️ Cover Letters
+- Why most people skip them (and lose)
+- A simple 4-paragraph structure that works
+- How to brag without sounding arrogant
+
+</div>
+
+<div v-click>
+
+### 🔐 Online Safety
+- Real threats in the job search process
+- Phishing, RATs, fake job portals
+- How to protect yourself without being paranoid
+
+</div>
+
+<div v-click>
+
+### 🎁 Raffle Draw
+- Prizes for our active participants
+- Stay till the end!
+
+</div>
+
+</div>
+
+---
+layout: section
+---
+
+# Part 1: CVs
+
+*Your first impression — and you won't be in the room when it happens*
+
+---
+transition: slide-up
+---
+
+# The 3 Types of CV
+
+<div class="grid grid-cols-3 gap-4 mt-4 text-sm">
+
+<div v-click class="border border-blue-400 rounded p-4">
+
+### 📋 Chronological
+Most common. Most preferred by employers.
+
+Lists experience newest → oldest. Shows clear progression.
+
+**Best for:** steady career growth in one field
+
+</div>
+
+<div v-click class="border border-green-400 rounded p-4">
+
+### 🛠 Functional / Skills-Based
+Leads with your skills and achievements — not dates.
+
+**Best for:** fresh grads, career changers, corps members with gaps but strong project/NYSC experience
+
+</div>
+
+<div v-click class="border border-purple-400 rounded p-4">
+
+### 🔀 Combination
+Skills section first, then chronological history.
+
+**Best for:** senior roles where you have both strong skills and solid experience
+
+</div>
+
+</div>
+
+<div v-click class="mt-6 text-yellow-400 font-semibold">
+
+💡 Pro Tip: As a fresh NYSC grad, lean towards Functional or Combination. Own your skills, don't hide them behind limited experience.
+
+</div>
 
 ---
 transition: fade-out
 ---
 
-# What is Slidev?
+# What is ATS — and Why Should You Care?
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+<div class="text-base leading-relaxed mt-4">
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - themes can be shared and re-used as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
-<br>
-<br>
+**ATS = Applicant Tracking System**
 
-Read more about [Why Slidev?](https://sli.dev/guide/why)
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/features/slide-scope-style
--->
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
-<!--
-Here is another comment.
--->
-
----
-transition: slide-up
-level: 2
----
-
-# Navigation
-
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/ui#navigation-bar)
-
-## Keyboard Shortcuts
-
-|                                                     |                             |
-| --------------------------------------------------- | --------------------------- |
-| <kbd>right</kbd> / <kbd>space</kbd>                 | next animation or slide     |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd>                                       | previous slide              |
-| <kbd>down</kbd>                                     | next slide                  |
-
-<!-- https://sli.dev/guide/animations.html#click-animation -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-  alt=""
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
-
----
-layout: two-cols
-layoutClass: gap-16
----
-
-# Table of contents
-
-You can use the `Toc` component to generate a table of contents for your slides:
-
-```html
-<Toc minDepth="1" maxDepth="1" />
-```
-
-The title will be inferred from your slide content, or you can override it with `title` and `level` in your frontmatter.
-
-::right::
-
-<Toc text-sm minDepth="1" maxDepth="2" />
-
----
-layout: image-right
-image: https://cover.sli.dev
----
-
-# Code
-
-Use code snippets and get the highlighting directly, and even types hover!
-
-```ts [filename-example.ts] {all|4|6|6-7|9|all} twoslash
-// TwoSlash enables TypeScript hover information
-// and errors in markdown code blocks
-// More at https://shiki.style/packages/twoslash
-import { computed, ref } from 'vue'
-
-const count = ref(0)
-const doubled = computed(() => count.value * 2)
-
-doubled.value = 2
-```
-
-<arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="342" color="#953" width="2" arrowSize="1" />
-
-<!-- This allow you to embed external code blocks -->
-<<< @/snippets/external.ts#snippet
-
-<!-- Footer -->
-
-[Learn more](https://sli.dev/features/line-highlighting)
-
-<!-- Inline style -->
-<style>
-.footnotes-sep {
-  @apply mt-5 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
-}
-</style>
-
-<!--
-Notes can also sync with clicks
-
-[click] This will be highlighted after the first click
-
-[click] Highlighted with `count = ref(0)`
-
-[click:3] Last click (skip two clicks)
--->
-
----
-level: 2
----
-
-# Shiki Magic Move
-
-Powered by [shiki-magic-move](https://shiki-magic-move.netlify.app/), Slidev supports animations across multiple code snippets.
-
-Add multiple code blocks and wrap them with <code>````md magic-move</code> (four backticks) to enable the magic move. For example:
-
-````md magic-move {lines: true}
-```ts {*|2|*}
-// step 1
-const author = reactive({
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-})
-```
-
-```ts {*|1-2|3-4|3-4,8}
-// step 2
-export default {
-  data() {
-    return {
-      author: {
-        name: 'John Doe',
-        books: [
-          'Vue 2 - Advanced Guide',
-          'Vue 3 - Basic Guide',
-          'Vue 4 - The Mystery'
-        ]
-      }
-    }
-  }
-}
-```
-
-```ts
-// step 3
-export default {
-  data: () => ({
-    author: {
-      name: 'John Doe',
-      books: [
-        'Vue 2 - Advanced Guide',
-        'Vue 3 - Basic Guide',
-        'Vue 4 - The Mystery'
-      ]
-    }
-  })
-}
-```
-
-Non-code blocks are ignored.
-
-```vue
-<!-- step 4 -->
-<script setup>
-const author = {
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-}
-</script>
-```
-````
-
----
-
-# Components
-
-<div grid="~ cols-2 gap-4">
-<div>
-
-You can use Vue components directly inside your slides.
-
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
+Most companies — especially multinationals and big Nigerian firms — use software to filter CVs *before a human ever sees them*.
 
 </div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
--->
-
----
-class: px-20
----
-
-# Themes
-
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
-
-<div grid="~ cols-2 gap-2" m="t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" alt="">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/guide/theme-addon#use-theme) and
-check out the [Awesome Themes Gallery](https://sli.dev/resources/theme-gallery).
-
----
-
-# Clicks Animations
-
-You can add `v-click` to elements to add a click animation.
-
-<div v-click>
-
-This shows up when you click the slide:
-
-```html
-<div v-click>This shows up when you click the slide.</div>
-```
-
-</div>
-
-<br>
 
 <v-click>
 
-The <span v-mark.red="3"><code>v-mark</code> directive</span>
-also allows you to add
-<span v-mark.circle.orange="4">inline marks</span>
-, powered by [Rough Notation](https://roughnotation.com/):
-
-```html
-<span v-mark.underline.orange>inline markers</span>
-```
+### How it works:
+The system scans your CV for **keywords from the job description**.
+No match → your CV goes in the bin. Automatically. No human review.
 
 </v-click>
 
-<div mt-20 v-click>
+<v-click>
 
-[Learn more](https://sli.dev/guide/animations#click-animation)
+### What this means for you:
+
+- Read the job description **carefully**
+- Mirror the exact language they use (e.g., if they say "stakeholder management", use that phrase — not "managing people")
+- Avoid fancy tables, columns, or graphics — ATS can't read them
+
+</v-click>
+
+<v-click>
+
+<div class="mt-4 bg-red-900 bg-opacity-30 rounded p-3 text-sm">
+A beautifully designed CV that fails ATS is invisible. A plain CV with the right keywords gets interviews.
+</div>
+
+</v-click>
+
+---
+
+# The XYZ Formula — Your Secret Weapon
+
+<div class="text-base mt-2">
+
+This is how Google and Amazon train hiring managers to evaluate bullet points. Use it to write yours.
+
+</div>
+
+<div class="mt-4 text-xl text-center font-bold text-blue-400">
+"Accomplished <span class="text-green-400">X</span> as measured by <span class="text-yellow-400">Y</span>, by doing <span class="text-red-400">Z</span>."
+</div>
+
+<div class="grid grid-cols-3 gap-4 mt-6 text-sm">
+
+<div class="text-green-400">
+
+**X — What you achieved**
+The outcome. The win.
+
+</div>
+
+<div class="text-yellow-400">
+
+**Y — Proof it mattered**
+Numbers, %, ₦, time saved, people reached
+
+</div>
+
+<div class="text-red-400">
+
+**Z — How you did it**
+Tools, skills, actions you took
+
+</div>
+
+</div>
+
+---
+transition: slide-up
+---
+
+# XYZ in Action — Before & After
+
+<div class="grid grid-cols-2 gap-6 mt-4 text-sm">
+
+<div>
+
+### ❌ Before (Weak)
+*"Assisted with NYSC community projects."*
+
+*"Handled data entry during teaching."*
+
+*"Did social media for my PPA."*
+
+</div>
+
+<div v-click>
+
+### ✅ After (XYZ)
+
+*"Led 15 corps members to organise a health outreach **(X)**, reaching 450 community members and increasing awareness by 40% **(Y)**, by partnering with local PHCs and using Canva for IEC materials **(Z)**."*
+
+*"Built a student performance database for 120 pupils **(X)**, reducing grading errors by 85% and saving 15 hours weekly **(Y)**, using automated Excel templates and pivot tables **(Z)**."*
+
+</div>
+
+</div>
+
+<v-click>
+
+<div class="mt-6 bg-blue-900 bg-opacity-30 rounded p-3 text-sm">
+
+🧠 Recruiters spend an average of **7.4 seconds** scanning a CV. Quantifiable results are the fastest way to make them stop and read properly.
+
+</div>
+
+</v-click>
+
+---
+
+# Quick CV Checklist
+
+<div class="grid grid-cols-2 gap-6 mt-4">
+
+<div>
+
+<v-clicks>
+
+- ✅ One or two pages max — no exceptions
+- ✅ Clean font: Arial or Calibri, size 10–12
+- ✅ Always send as **PDF** (never Word — formatting breaks)
+- ✅ No photo unless the job description specifically asks
+- ✅ Tailor every application — yes, every single one
+- ✅ Use keywords from the job description
+- ✅ Start every bullet with a strong action verb
+
+</v-clicks>
+
+</div>
+
+<div v-click class="bg-red-900 bg-opacity-20 rounded p-4 text-sm">
+
+### Common Mistakes to Avoid
+
+- "References available on request" — remove it, it's a waste of a line
+- Listing every single WAEC subject
+- Generic objective statements like "to obtain a challenging role..."
+- Lying about your skills (you will be tested)
+- Using the same CV for every job
+
+</div>
+
+</div>
+
+---
+layout: section
+---
+
+# Part 2: Cover Letters
+
+*The thing most people skip — and the thing that can save an average CV*
+
+---
+
+# Why Bother With a Cover Letter?
+
+<div class="mt-4 text-base">
+
+Most corps members either don't write one, or just paste their CV into a text box and call it a day. Don't do that.
+
+</div>
+
+<div class="grid grid-cols-3 gap-4 mt-6 text-sm">
+
+<div v-click class="border border-white border-opacity-20 rounded p-4">
+
+**70% of hiring managers read cover letters** — especially for entry-level roles where CVs all look similar.
+
+</div>
+
+<div v-click class="border border-white border-opacity-20 rounded p-4">
+
+It shows you can **communicate in writing** — a skill nearly every job requires, and one interviews alone can't always test.
+
+</div>
+
+<div v-click class="border border-white border-opacity-20 rounded p-4">
+
+It lets you **explain the things your CV can't** — a service year gap, a career switch, or why you're applying from a different city.
+
+</div>
+
+</div>
+
+<v-click>
+
+<div class="mt-6 text-yellow-400 font-semibold">
+
+A strong cover letter can move you from the "maybe" pile to the interview list — even if your CV is just okay.
+
+</div>
+
+</v-click>
+
+---
+
+# The 4-Paragraph Structure That Works
+
+<div class="grid grid-cols-2 gap-6 mt-4 text-sm">
+
+<div>
+
+<v-clicks>
+
+**Para 1 — Who You Are**
+One or two sentences. Name, role you're applying for, where you found it.
+*"As a recent NYSC graduate with hands-on experience in digital marketing, I was genuinely excited to find the Marketing Associate role at your company."*
+
+---
+
+**Para 2 — The Brag (Value Paragraph)**
+Two or three XYZ-style achievements. Connect your experience directly to what they need. This is the paragraph that wins interviews.
+
+---
+
+**Para 3 — Why Them, Why You**
+Show you actually researched the company. Mention one specific thing that excites you about them. This is where most people go generic — don't.
+
+---
+
+**Para 4 — Call to Action**
+Thank them, express availability for an interview. Keep it confident, not desperate.
+
+</v-clicks>
+
+</div>
+
+<div v-click class="bg-green-900 bg-opacity-20 rounded p-4">
+
+### The Golden Rule
+
+**Brag with proof, not arrogance.**
+
+You're not saying *"I'm the best candidate"* — you're saying *"here is evidence of what I've done, and here is why that's relevant to you."*
+
+There's a big difference.
+
+One sounds entitled. The other sounds confident.
+
+</div>
+
+</div>
+
+---
+layout: section
+---
+
+# Part 3: Online Safety in Job Applications
+
+*The stuff nobody talks about until it's too late*
+
+---
+
+# The Job Hunt is Full of Landmines
+
+<div class="mt-4 text-base">
+
+Every scammer knows that job seekers are anxious, distracted, and checking their email obsessively. That makes you a target.
+
+</div>
+
+<div class="grid grid-cols-2 gap-4 mt-4 text-sm">
+
+<div v-click class="border border-red-400 rounded p-3">
+
+### 🎣 Phishing
+Fake emails from "companies" — *"Congratulations! You've been shortlisted — click here to accept your offer."*
+
+They steal your login details, banking info, or install malware.
+
+</div>
+
+<div v-click class="border border-red-400 rounded p-3">
+
+### 🐛 Worms & RATs
+**Worms** spread automatically and infect everything.
+**RATs (Remote Access Trojans)** give hackers full control of your device — screen, camera, passwords, everything.
+
+</div>
+
+<div v-click class="border border-orange-400 rounded p-3">
+
+### 📄 PDF & Image Hijacking
+22% of malicious email attachments are PDFs. A "job offer letter" that's actually malware. Hidden links, QR codes, JavaScript embedded inside.
+
+</div>
+
+<div v-click class="border border-orange-400 rounded p-3">
+
+### 🌐 Typo-Squatting
+Fake sites like `linkdin.com`, `jobberman.ng.co`, `andelaa.com`. You think you're applying. You're handing over your data.
+
+</div>
 
 </div>
 
 ---
 
-# Motions
+# More Threats Worth Knowing
 
-Motion animations are powered by [@vueuse/motion](https://motion.vueuse.org/), triggered by `v-motion` directive.
+<div class="grid grid-cols-2 gap-6 mt-6 text-sm">
 
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }"
-  :click-3="{ x: 80 }"
-  :leave="{ x: 1000 }"
->
-  Slidev
-</div>
-```
+<div>
 
-<div class="w-60 relative">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-square.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-circle.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-triangle.png"
-      alt=""
-    />
-  </div>
+<v-click>
 
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
+### 📧 Email Masking & Spam
+Scammers send from addresses like `hr@outlook.com` or `recruitment.gtb@gmail.com`.
 
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
-}
-</script>
+Real companies use their own domain. `hr@guarantytrust.com` is real. `hr.gtbank@gmail.com` is not.
 
-<div
-  v-motion
-  :initial="{ x:35, y: 30, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
+**Always check the actual sender address — not just the display name.**
 
-[Learn more](https://sli.dev/guide/animations.html#motion)
+</v-click>
 
 </div>
 
----
+<div>
 
-# $\LaTeX$
+<v-click>
 
-$\LaTeX$ is supported out-of-box. Powered by [$\KaTeX$](https://katex.org/).
+### 📱 Fake & Modded Apps
+"Premium LinkedIn for free", "WhatsApp Business Pro", cracked job alert apps from random sites.
 
-<div h-3 />
+They're almost always packed with spyware. If you didn't pay for a paid product, someone else is — with your data.
 
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$ {1|3|all}
-\begin{aligned}
-\nabla \cdot \vec{E} &= \frac{\rho}{\varepsilon_0} \\
-\nabla \cdot \vec{B} &= 0 \\
-\nabla \times \vec{E} &= -\frac{\partial\vec{B}}{\partial t} \\
-\nabla \times \vec{B} &= \mu_0\vec{J} + \mu_0\varepsilon_0\frac{\partial\vec{E}}{\partial t}
-\end{aligned}
-$$
-
-[Learn more](https://sli.dev/features/latex)
-
----
-
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
-
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectiveness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
+</v-click>
 
 </div>
 
-Learn more: [Mermaid Diagrams](https://sli.dev/features/mermaid) and [PlantUML Diagrams](https://sli.dev/features/plantuml)
+</div>
 
----
-foo: bar
-dragPos:
-  square: 691,32,167,_,-16
----
+<v-click>
 
-# Draggable Elements
+<div class="mt-6 bg-red-900 bg-opacity-30 rounded p-3">
 
-Double-click on the draggable elements to edit their positions.
+**The uncomfortable truth:** 68% of all cyberattacks begin in your inbox. The job hunt puts you in the inbox constantly. Stay sharp.
 
-<br>
+</div>
 
-###### Directive Usage
-
-```md
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-```
-
-<br>
-
-###### Component Usage
-
-```md
-<v-drag text-3xl>
-  <div class="i-carbon:arrow-up" />
-  Use the `v-drag` component to have a draggable container!
-</v-drag>
-```
-
-<v-drag pos="663,206,261,_,-15">
-  <div text-center text-3xl border border-main rounded>
-    Double-click me!
-  </div>
-</v-drag>
-
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-
-###### Draggable Arrow
-
-```md
-<v-drag-arrow two-way />
-```
-
-<v-drag-arrow pos="67,452,253,46" two-way op70 />
-
----
-src: ./pages/imported-slides.md
-hide: false
----
+</v-click>
 
 ---
 
-# Monaco Editor
+# Your Online Safety Rules — Non-Negotiable
 
-Slidev provides built-in Monaco Editor support.
+<div class="grid grid-cols-2 gap-4 mt-4 text-sm">
 
-Add `{monaco}` to the code block to turn it into an editor:
+<div>
 
-```ts {monaco}
-import { ref } from 'vue'
-import { emptyArray } from './external'
+<v-clicks>
 
-const arr = ref(emptyArray(10))
-```
+- 🚫 Never click links in unsolicited emails — go directly to the company's official website
+- 📞 Verify every job offer by calling the official company number (find it yourself — don't call the number in the email)
+- 🏢 Use only official job portals: LinkedIn, Jobberman, MyJobMag, Glassdoor
+- 🔐 Enable 2FA on every account — email, LinkedIn, banking, everything
+- 🔑 Use a unique password for each account + a password manager (Google Password Manager is free)
+- 🛡 Scan every download with antivirus before opening (Windows Defender works fine if it's updated)
 
-Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
+</v-clicks>
 
-```ts {monaco-run}
-import { version } from 'vue'
-import { emptyArray, sayHello } from './external'
+</div>
 
-sayHello()
-console.log(`vue ${version}`)
-console.log(emptyArray<number>(10).reduce(fib => [...fib, fib.at(-1)! + fib.at(-2)!], [1, 1]))
-```
+<div v-click>
+
+### Managing Your Email Professionally
+
+- Use a clean, professional address: `firstname.lastname@gmail.com`
+- Create a dedicated **Job Applications** folder to stay organised
+- Keep a backup email and phone number linked to recovery
+- Store recovery codes somewhere safe and offline
+- **Never share OTPs** — no real recruiter will ever ask for one
+
+<div class="mt-4 text-yellow-400 text-xs">
+
+A professional email isn't just safer — it's a signal. `cutegirl2k@yahoo.com` is not getting callbacks.
+
+</div>
+
+</div>
+
+</div>
 
 ---
 layout: center
 class: text-center
 ---
 
-# Learn More
+# Quick Recap Before We Wrap Up
 
-[Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/resources/showcases)
+<div class="grid grid-cols-2 gap-6 mt-6 text-sm text-left max-w-2xl mx-auto">
 
-<PoweredBySlidev mt-10 />
+<div v-click>
+
+### CVs
+- Use XYZ in every bullet point
+- Tailor to every job, use their keywords
+- PDF format, clean font, 1–2 pages
+- Think about ATS before you think about design
+
+</div>
+
+<div v-click>
+
+### Cover Letters
+- Don't skip them — 70% of HMs read them
+- 4 paragraphs: intro, brag, why them, close
+- Brag with proof, not confidence alone
+
+</div>
+
+<div v-click>
+
+### Online Safety
+- Verify before you click or download anything
+- Check sender domains, not display names
+- Use 2FA and unique passwords
+- Stick to official portals
+
+</div>
+
+<div v-click>
+
+### Mindset
+- The job hunt after NYSC is a numbers game — keep applying
+- One bad application won't ruin you, but complacency will
+- Stay consistent, stay safe, and go get that bag 🚀
+
+</div>
+
+</div>
+
+---
+layout: center
+class: text-center
+transition: fade-out
+---
+
+# 🎁 Raffle Draw Time!
+
+*Stay till the end — you might be going home with a prize*
+
+<div class="grid grid-cols-3 gap-6 mt-8 text-sm">
+
+<div v-click class="border border-yellow-400 rounded p-4">
+
+**1st Prize**
+🎓 Premium LinkedIn Learning
+1-month subscription
+
+</div>
+
+<div v-click class="border border-gray-400 rounded p-4">
+
+**2nd Prize (×2)**
+📄 Professional CV Review Vouchers
+Expert feedback on your CV
+
+</div>
+
+<div v-click class="border border-orange-400 rounded p-4">
+
+**3rd Prize (×3)**
+📶 Data Bundles
+Because job hunting eats data
+
+</div>
+
+</div>
+
+<v-click>
+
+<div class="mt-8 opacity-60 text-sm">
+
+Winners drawn from participants who submitted questions in the WhatsApp group.
+
+</div>
+
+</v-click>
+
+---
+layout: center
+class: text-center
+---
+
+# Thank You!
+
+<div class="mt-6 text-lg opacity-80">
+
+Questions? Let's talk.
+There are no dumb questions here — only missed opportunities.
+
+</div>
+
+<div class="mt-8 text-sm opacity-60">
+
+*Stay safe. Stay smart. Go get that bag after NYSC.* 🚀
+
+</div>
