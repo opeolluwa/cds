@@ -1,124 +1,171 @@
 ---
 theme: seriph
-background: https://cover.sli.dev
-title: "NYSC CDS Talk: Mastering Your Job Hunt – CVs, Cover Letters & Staying Safe Online"
-info: |
-  NYSC CDS Talk covering CV writing, cover letters, and online safety for job seekers.
+background: https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1920&q=80
+title: "CVs, Cover Letters & Online Safety — NYSC CDS Talk"
+info: A practical NYSC CDS talk covering job hunting (CVs & cover letters) and staying safe online.
 class: text-center
 drawings:
   persist: false
 transition: slide-left
 duration: 60min
+fonts:
+  sans: Poppins
+  weights: '400,500,600,700,800'
 ---
 
-# Mastering Your Job Hunt
+<div class="absolute inset-0 bg-gradient-to-br from-black via-black/70 to-blue-950/60" />
 
-**CVs, Cover Letters & Staying Safe Online**
+<div class="relative z-10 flex flex-col items-center justify-center h-full">
 
-<div class="text-lg opacity-70 mt-4">NYSC CDS Talk · ~45–60 mins + Q&A + Raffle</div>
+<div class="text-xs uppercase tracking-widest opacity-50 mb-4">NYSC CDS Talk · 2025</div>
 
-<div @click="$slidev.nav.next" class="mt-12 py-1 cursor-pointer" hover:bg="white op-10">
-  Press Space to begin <carbon:arrow-right class="inline" />
+# CVs, Cover Letters<br>& Online Safety
+
+<div class="mt-4 text-lg font-medium text-blue-300 opacity-90">
+  Land the job. Don't get scammed doing it.
 </div>
+
+<div class="mt-3 text-sm opacity-50">~45–60 mins · Q&A · Raffle Draw</div>
+
+<div @click="$slidev.nav.next" class="mt-10 inline-block px-6 py-2 border border-white/30 rounded-full text-sm cursor-pointer hover:bg-white/10 transition-colors">
+  Let's get into it →
+</div>
+
+</div>
+
+<!--
+Greet the room warmly. You're a peer, not a lecturer.
+-->
 
 ---
 layout: center
 class: text-center
-transition: fade-out
+transition: fade
 ---
 
-# Good afternoon, corps members! 👋
+<div class="text-3xl font-bold">Good afternoon, corps members! 👋</div>
 
-Before we dive in — raise your hand if you've sent out a CV in the last 3 months.
+<div class="mt-8 text-lg opacity-70">Quick show of hands before we start —</div>
 
 <v-click>
-
-Now raise your hand if you're **not 100% sure** it was the best version it could be.
-
+<div class="mt-6 text-xl font-semibold text-blue-300">
+  🙋 Raise your hand if you've sent out a CV in the last 3 months.
+</div>
 </v-click>
 
 <v-click>
-
-That's exactly why we're here today.
-
+<div class="mt-5 text-xl font-semibold text-yellow-300">
+  🙋 Keep it up if you're 100% sure it was your best work.
+</div>
 </v-click>
+
+<v-click>
+<div class="mt-5 text-base opacity-60 italic">
+  That's exactly why we're here.
+</div>
+</v-click>
+
+---
+layout: default
+transition: slide-up
+---
+
+# Today's Agenda
+
+<div class="grid grid-cols-2 gap-4 mt-6">
+
+<div v-click class="flex gap-3 items-start rounded-xl p-4 border border-blue-500/40 bg-blue-900/10">
+  <div class="text-3xl leading-none mt-1">📄</div>
+  <div>
+    <div class="font-bold text-blue-300 text-base">CVs</div>
+    <div class="text-xs opacity-60 mt-1">3 types · ATS explained · The Google XYZ formula</div>
+  </div>
+</div>
+
+<div v-click class="flex gap-3 items-start rounded-xl p-4 border border-green-500/40 bg-green-900/10">
+  <div class="text-3xl leading-none mt-1">✉️</div>
+  <div>
+    <div class="font-bold text-green-300 text-base">Cover Letters</div>
+    <div class="text-xs opacity-60 mt-1">Why they matter · 4-para structure · Brag with proof</div>
+  </div>
+</div>
+
+<div v-click class="flex gap-3 items-start rounded-xl p-4 border border-red-500/40 bg-red-900/10">
+  <div class="text-3xl leading-none mt-1">🔐</div>
+  <div>
+    <div class="font-bold text-red-300 text-base">Online Safety</div>
+    <div class="text-xs opacity-60 mt-1">Phishing · RATs · Fake portals · How to stay protected</div>
+  </div>
+</div>
+
+<div v-click class="flex gap-3 items-start rounded-xl p-4 border border-yellow-500/40 bg-yellow-900/10">
+  <div class="text-3xl leading-none mt-1">🎁</div>
+  <div>
+    <div class="font-bold text-yellow-300 text-base">Raffle Draw</div>
+    <div class="text-xs opacity-60 mt-1">Prizes for active participants — stay till the end!</div>
+  </div>
+</div>
+
+</div>
 
 ---
 layout: two-cols
 transition: slide-up
 ---
 
-# Meet Your Speaker
+# About Me
 
-<div class="text-sm leading-relaxed mt-4">
+<div class="text-sm leading-relaxed mt-4 space-y-4">
+
+<div v-click>
 
 **Software Engineer · ~10 Years in the Industry**
 
-I've been writing code and building products for nearly a decade — working with teams spread across Nigeria, Europe, and North America. Remote teams, on-site teams, startups, and scale-ups.
+I've been writing code and shipping products for nearly a decade — across startups, scale-ups, and remote teams spanning Nigeria, Europe, and North America.
 
-In that time I've:
-- Reviewed **hundreds** of CVs and cover letters
-- Sat on **both sides** of the hiring table
-- Watched great candidates get filtered out by bad formatting
-- And yes — I've also made every mistake I'm about to warn you about
+</div>
+
+<div v-click>
+
+**What that actually looks like:**
+- Written code running in production for millions of users
+- Collaborated across timezones with engineers, PMs, and designers
+- Reviewed hundreds of CVs and sat on both sides of the hiring table
+
+</div>
+
+<div v-click>
+
+**Why I'm here:**
+
+After NYSC, nobody handed me a playbook. I made every mistake I'm about to warn you about — and figured the rest out the hard way.
+
+Today, I'm handing you the shortcut.
+
+</div>
 
 </div>
 
 ::right::
 
-<div class="mt-8 ml-8 text-sm leading-relaxed opacity-80">
+<div class="ml-8 mt-4 space-y-3">
 
-**Why I care about this talk:**
-
-After NYSC, I didn't have a mentor walking me through the job hunt. I figured most of it out the hard way.
-
-You don't have to.
-
-That's the whole point of today — to give you the shortcut I wish I had.
-
+<div v-click class="rounded-xl p-4 border border-white/10 bg-white/5 text-sm">
+  <div class="text-2xl mb-1">🌍</div>
+  <div class="font-semibold">Global Teams</div>
+  <div class="opacity-50 text-xs mt-1">Nigeria · Europe · North America</div>
 </div>
 
----
-transition: slide-left
----
-
-# What We're Covering Today
-
-<div class="grid grid-cols-2 gap-6 mt-6">
-
-<div v-click>
-
-### 📄 CVs
-- The 3 types and when to use each
-- The Google XYZ formula
-- What ATS is doing to your application
-
+<div v-click class="rounded-xl p-4 border border-white/10 bg-white/5 text-sm">
+  <div class="text-2xl mb-1">💻</div>
+  <div class="font-semibold">~10 Years in Tech</div>
+  <div class="opacity-50 text-xs mt-1">Startups to scale-ups</div>
 </div>
 
-<div v-click>
-
-### ✉️ Cover Letters
-- Why most people skip them (and lose)
-- A simple 4-paragraph structure that works
-- How to brag without sounding arrogant
-
-</div>
-
-<div v-click>
-
-### 🔐 Online Safety
-- Real threats in the job search process
-- Phishing, RATs, fake job portals
-- How to protect yourself without being paranoid
-
-</div>
-
-<div v-click>
-
-### 🎁 Raffle Draw
-- Prizes for our active participants
-- Stay till the end!
-
+<div v-click class="rounded-xl p-4 border border-white/10 bg-white/5 text-sm">
+  <div class="text-2xl mb-1">🎯</div>
+  <div class="font-semibold">Hiring Experience</div>
+  <div class="opacity-50 text-xs mt-1">Hundreds of CVs reviewed, interviews led</div>
 </div>
 
 </div>
@@ -127,9 +174,11 @@ transition: slide-left
 layout: section
 ---
 
-# Part 1: CVs
+<div class="text-blue-300 text-xs font-semibold uppercase tracking-widest mb-3">Part 1</div>
 
-*Your first impression — and you won't be in the room when it happens*
+# CVs
+
+*Your first impression — and you won't be in the room when it's made*
 
 ---
 transition: slide-up
@@ -137,196 +186,186 @@ transition: slide-up
 
 # The 3 Types of CV
 
+<div class="grid grid-cols-3 gap-4 mt-5 text-sm">
+
+<div v-click class="rounded-xl p-5 border border-blue-400/40 bg-blue-900/10">
+  <div class="text-3xl mb-2">📋</div>
+  <div class="font-bold text-blue-300 text-base mb-2">Chronological</div>
+  <div class="opacity-60 text-xs mb-3">Experience listed newest → oldest. Shows clear career progression.</div>
+  <div class="text-xs rounded p-2 bg-blue-900/30">
+    <span class="text-blue-300 font-semibold">Best for:</span> Steady career growth in one field
+  </div>
+</div>
+
+<div v-click class="rounded-xl p-5 border border-green-400/40 bg-green-900/10">
+  <div class="text-3xl mb-2">🛠</div>
+  <div class="font-bold text-green-300 text-base mb-2">Functional</div>
+  <div class="opacity-60 text-xs mb-3">Leads with skills and achievements — not dates or job titles.</div>
+  <div class="text-xs rounded p-2 bg-green-900/30">
+    <span class="text-green-300 font-semibold">Best for:</span> Fresh grads, career changers, corps members
+  </div>
+</div>
+
+<div v-click class="rounded-xl p-5 border border-purple-400/40 bg-purple-900/10">
+  <div class="text-3xl mb-2">🔀</div>
+  <div class="font-bold text-purple-300 text-base mb-2">Combination</div>
+  <div class="opacity-60 text-xs mb-3">Skills section first, then chronological experience below.</div>
+  <div class="text-xs rounded p-2 bg-purple-900/30">
+    <span class="text-purple-300 font-semibold">Best for:</span> Mid-senior roles with strong skills + experience
+  </div>
+</div>
+
+</div>
+
+<v-click>
+<div class="mt-4 rounded-xl p-3 border border-yellow-500/30 bg-yellow-900/15 text-xs text-yellow-200">
+  💡 <strong>NYSC Tip:</strong> Lean Functional or Combination. You have real project and community skills — don't let "limited full-time experience" bury them.
+</div>
+</v-click>
+
+---
+transition: fade
+---
+
+# ATS — The Robot Gatekeeper
+
+<div class="text-sm mt-3 opacity-70">Most companies use software to screen CVs <strong>before a human ever sees them.</strong></div>
+
+<v-click>
+
+<div class="grid grid-cols-2 gap-4 mt-5 text-sm">
+
+<div class="rounded-xl p-4 border border-red-400/40 bg-red-900/10">
+
+### How it works
+Scans your CV for **keywords from the job description**.
+
+No keyword match → auto-rejected. No human review. Ever.
+
+</div>
+
+<div class="rounded-xl p-4 border border-green-400/40 bg-green-900/10">
+
+### How to beat it
+- Mirror the **exact phrases** in the job description
+- *"Stakeholder management"* — not *"managing people"*
+- No tables, text boxes, or image-heavy layouts — ATS can't read them
+
+</div>
+
+</div>
+
+</v-click>
+
+<v-click>
+<div class="mt-4 rounded-xl p-3 border border-red-500/30 bg-red-900/15 text-xs text-red-200">
+  ⚠️ A beautifully designed CV that fails ATS is <strong>completely invisible.</strong> Design for the robot first, then the human.
+</div>
+</v-click>
+
+---
+
+# The XYZ Formula — Google's Hiring Secret
+
+<div class="text-xs mt-2 opacity-60">How Google & Amazon train interviewers to score candidates. Use it to write your bullet points.</div>
+
+<div class="mt-5 text-xl text-center font-bold py-4 rounded-xl bg-white/5 border border-white/10">
+  "Accomplished <span class="text-green-400">X</span> as measured by <span class="text-yellow-400">Y</span>, by doing <span class="text-red-400">Z</span>."
+</div>
+
 <div class="grid grid-cols-3 gap-4 mt-4 text-sm">
 
-<div v-click class="border border-blue-400 rounded p-4">
-
-### 📋 Chronological
-Most common. Most preferred by employers.
-
-Lists experience newest → oldest. Shows clear progression.
-
-**Best for:** steady career growth in one field
-
+<div v-click class="rounded-xl p-4 bg-green-900/15 border border-green-500/30">
+  <div class="text-green-400 font-bold mb-1">X — The Win</div>
+  <div class="text-xs opacity-60">What you achieved. The positive outcome.</div>
 </div>
 
-<div v-click class="border border-green-400 rounded p-4">
-
-### 🛠 Functional / Skills-Based
-Leads with your skills and achievements — not dates.
-
-**Best for:** fresh grads, career changers, corps members with gaps but strong project/NYSC experience
-
+<div v-click class="rounded-xl p-4 bg-yellow-900/15 border border-yellow-500/30">
+  <div class="text-yellow-400 font-bold mb-1">Y — The Proof</div>
+  <div class="text-xs opacity-60">Numbers. %. ₦. People reached. Hours saved.</div>
 </div>
 
-<div v-click class="border border-purple-400 rounded p-4">
-
-### 🔀 Combination
-Skills section first, then chronological history.
-
-**Best for:** senior roles where you have both strong skills and solid experience
-
-</div>
-
-</div>
-
-<div v-click class="mt-6 text-yellow-400 font-semibold">
-
-💡 Pro Tip: As a fresh NYSC grad, lean towards Functional or Combination. Own your skills, don't hide them behind limited experience.
-
-</div>
-
----
-transition: fade-out
----
-
-# What is ATS — and Why Should You Care?
-
-<div class="text-base leading-relaxed mt-4">
-
-**ATS = Applicant Tracking System**
-
-Most companies — especially multinationals and big Nigerian firms — use software to filter CVs *before a human ever sees them*.
-
-</div>
-
-<v-click>
-
-### How it works:
-The system scans your CV for **keywords from the job description**.
-No match → your CV goes in the bin. Automatically. No human review.
-
-</v-click>
-
-<v-click>
-
-### What this means for you:
-
-- Read the job description **carefully**
-- Mirror the exact language they use (e.g., if they say "stakeholder management", use that phrase — not "managing people")
-- Avoid fancy tables, columns, or graphics — ATS can't read them
-
-</v-click>
-
-<v-click>
-
-<div class="mt-4 bg-red-900 bg-opacity-30 rounded p-3 text-sm">
-A beautifully designed CV that fails ATS is invisible. A plain CV with the right keywords gets interviews.
-</div>
-
-</v-click>
-
----
-
-# The XYZ Formula — Your Secret Weapon
-
-<div class="text-base mt-2">
-
-This is how Google and Amazon train hiring managers to evaluate bullet points. Use it to write yours.
-
-</div>
-
-<div class="mt-4 text-xl text-center font-bold text-blue-400">
-"Accomplished <span class="text-green-400">X</span> as measured by <span class="text-yellow-400">Y</span>, by doing <span class="text-red-400">Z</span>."
-</div>
-
-<div class="grid grid-cols-3 gap-4 mt-6 text-sm">
-
-<div class="text-green-400">
-
-**X — What you achieved**
-The outcome. The win.
-
-</div>
-
-<div class="text-yellow-400">
-
-**Y — Proof it mattered**
-Numbers, %, ₦, time saved, people reached
-
-</div>
-
-<div class="text-red-400">
-
-**Z — How you did it**
-Tools, skills, actions you took
-
-</div>
-
-</div>
-
----
-transition: slide-up
----
-
-# XYZ in Action — Before & After
-
-<div class="grid grid-cols-2 gap-6 mt-4 text-sm">
-
-<div>
-
-### ❌ Before (Weak)
-*"Assisted with NYSC community projects."*
-
-*"Handled data entry during teaching."*
-
-*"Did social media for my PPA."*
-
-</div>
-
-<div v-click>
-
-### ✅ After (XYZ)
-
-*"Led 15 corps members to organise a health outreach **(X)**, reaching 450 community members and increasing awareness by 40% **(Y)**, by partnering with local PHCs and using Canva for IEC materials **(Z)**."*
-
-*"Built a student performance database for 120 pupils **(X)**, reducing grading errors by 85% and saving 15 hours weekly **(Y)**, using automated Excel templates and pivot tables **(Z)**."*
-
+<div v-click class="rounded-xl p-4 bg-red-900/15 border border-red-500/30">
+  <div class="text-red-400 font-bold mb-1">Z — The How</div>
+  <div class="text-xs opacity-60">Tools, skills, and actions you took.</div>
 </div>
 
 </div>
 
 <v-click>
-
-<div class="mt-6 bg-blue-900 bg-opacity-30 rounded p-3 text-sm">
-
-🧠 Recruiters spend an average of **7.4 seconds** scanning a CV. Quantifiable results are the fastest way to make them stop and read properly.
-
+<div class="mt-4 text-center text-xs opacity-40">
+  🧠 Recruiters spend ~7.4 seconds scanning a CV. Numbers make them stop and read.
 </div>
-
 </v-click>
 
 ---
+layout: two-cols
+---
 
-# Quick CV Checklist
+# XYZ: Before & After
 
-<div class="grid grid-cols-2 gap-6 mt-4">
+<div class="text-sm space-y-4 mt-4">
 
-<div>
+<div v-click class="rounded-xl p-4 bg-red-900/15 border border-red-500/30">
+  <div class="text-red-400 font-semibold text-xs mb-2">❌ Weak</div>
+  <div class="opacity-60 italic text-xs">"Assisted with NYSC community projects."</div>
+</div>
+
+<div v-click class="rounded-xl p-4 bg-green-900/15 border border-green-500/30">
+  <div class="text-green-400 font-semibold text-xs mb-2">✅ XYZ Strong</div>
+  <div class="opacity-80 text-xs leading-relaxed">"Led 15 corps members to organise a health outreach <strong class="text-green-300">(X)</strong>, reaching 450 community members and raising awareness by 40% <strong class="text-yellow-300">(Y)</strong>, by partnering with local PHCs and creating Canva IEC materials <strong class="text-red-300">(Z)</strong>."</div>
+</div>
+
+</div>
+
+::right::
+
+<div class="text-sm space-y-4 mt-4 ml-5">
+
+<div v-click class="rounded-xl p-4 bg-red-900/15 border border-red-500/30">
+  <div class="text-red-400 font-semibold text-xs mb-2">❌ Weak</div>
+  <div class="opacity-60 italic text-xs">"Handled data entry during teaching."</div>
+</div>
+
+<div v-click class="rounded-xl p-4 bg-green-900/15 border border-green-500/30">
+  <div class="text-green-400 font-semibold text-xs mb-2">✅ XYZ Strong</div>
+  <div class="opacity-80 text-xs leading-relaxed">"Built a student performance database for 120 pupils <strong class="text-green-300">(X)</strong>, cutting grading errors by 85% and saving 15 hrs/week <strong class="text-yellow-300">(Y)</strong>, using automated Excel templates and pivot tables <strong class="text-red-300">(Z)</strong>."</div>
+</div>
+
+</div>
+
+---
+
+# CV Quick Checklist
+
+<div class="grid grid-cols-2 gap-5 mt-4">
+
+<div class="space-y-2">
 
 <v-clicks>
 
-- ✅ One or two pages max — no exceptions
-- ✅ Clean font: Arial or Calibri, size 10–12
-- ✅ Always send as **PDF** (never Word — formatting breaks)
-- ✅ No photo unless the job description specifically asks
-- ✅ Tailor every application — yes, every single one
-- ✅ Use keywords from the job description
-- ✅ Start every bullet with a strong action verb
+<div class="flex gap-3 items-center py-2 border-b border-white/10 text-xs">✅ <span>1–2 pages max — no exceptions</span></div>
+<div class="flex gap-3 items-center py-2 border-b border-white/10 text-xs">✅ <span>Clean font: Arial or Calibri, size 10–12</span></div>
+<div class="flex gap-3 items-center py-2 border-b border-white/10 text-xs">✅ <span>Always send as <strong>PDF</strong> — never Word</span></div>
+<div class="flex gap-3 items-center py-2 border-b border-white/10 text-xs">✅ <span>No photo unless the JD specifically asks</span></div>
+<div class="flex gap-3 items-center py-2 border-b border-white/10 text-xs">✅ <span>Tailor every application — job keywords matter</span></div>
+<div class="flex gap-3 items-center py-2 text-xs">✅ <span>Every bullet starts with a strong action verb</span></div>
 
 </v-clicks>
 
 </div>
 
-<div v-click class="bg-red-900 bg-opacity-20 rounded p-4 text-sm">
+<div v-click class="rounded-xl p-4 bg-red-900/15 border border-red-500/30 text-xs">
 
-### Common Mistakes to Avoid
+<div class="font-bold text-red-300 mb-3">🚫 Stop Doing These</div>
 
-- "References available on request" — remove it, it's a waste of a line
-- Listing every single WAEC subject
-- Generic objective statements like "to obtain a challenging role..."
-- Lying about your skills (you will be tested)
-- Using the same CV for every job
+<div class="space-y-2 opacity-70">
+  <div>· "References available on request" — remove it</div>
+  <div>· Listing every WAEC subject</div>
+  <div>· "To obtain a challenging role in a reputable organisation..."</div>
+  <div>· Lying about your skills — you will be tested</div>
+  <div>· Sending the same CV to every role</div>
+</div>
 
 </div>
 
@@ -336,98 +375,96 @@ transition: slide-up
 layout: section
 ---
 
-# Part 2: Cover Letters
+<div class="text-green-300 text-xs font-semibold uppercase tracking-widest mb-3">Part 2</div>
 
-*The thing most people skip — and the thing that can save an average CV*
+# Cover Letters
+
+*The document most people skip — the one that tips the scale*
 
 ---
 
-# Why Bother With a Cover Letter?
-
-<div class="mt-4 text-base">
-
-Most corps members either don't write one, or just paste their CV into a text box and call it a day. Don't do that.
-
-</div>
+# Why a Cover Letter Matters
 
 <div class="grid grid-cols-3 gap-4 mt-6 text-sm">
 
-<div v-click class="border border-white border-opacity-20 rounded p-4">
-
-**70% of hiring managers read cover letters** — especially for entry-level roles where CVs all look similar.
-
+<div v-click class="rounded-xl p-5 border border-white/10 bg-white/5 text-center">
+  <div class="text-4xl font-black text-green-300 mb-2">70%</div>
+  <div class="text-xs opacity-60">of hiring managers read them — especially for entry-level roles where every CV looks the same</div>
 </div>
 
-<div v-click class="border border-white border-opacity-20 rounded p-4">
-
-It shows you can **communicate in writing** — a skill nearly every job requires, and one interviews alone can't always test.
-
+<div v-click class="rounded-xl p-5 border border-white/10 bg-white/5 text-center">
+  <div class="text-3xl mb-2">✍️</div>
+  <div class="text-xs opacity-60">Proves you can <strong>communicate in writing</strong> — a skill nearly every role needs, and interviews can't always test</div>
 </div>
 
-<div v-click class="border border-white border-opacity-20 rounded p-4">
-
-It lets you **explain the things your CV can't** — a service year gap, a career switch, or why you're applying from a different city.
-
+<div v-click class="rounded-xl p-5 border border-white/10 bg-white/5 text-center">
+  <div class="text-3xl mb-2">🪟</div>
+  <div class="text-xs opacity-60">Lets you explain what your CV can't — gaps, career switches, NYSC placements, relocation</div>
 </div>
 
 </div>
 
 <v-click>
-
-<div class="mt-6 text-yellow-400 font-semibold">
-
-A strong cover letter can move you from the "maybe" pile to the interview list — even if your CV is just okay.
-
+<div class="mt-6 text-center text-yellow-300 font-semibold text-sm">
+  A strong cover letter moves you from the "maybe" pile to the interview list — even if your CV is average.
 </div>
-
 </v-click>
 
 ---
-
-# The 4-Paragraph Structure That Works
-
-<div class="grid grid-cols-2 gap-6 mt-4 text-sm">
-
-<div>
-
-<v-clicks>
-
-**Para 1 — Who You Are**
-One or two sentences. Name, role you're applying for, where you found it.
-*"As a recent NYSC graduate with hands-on experience in digital marketing, I was genuinely excited to find the Marketing Associate role at your company."*
-
+layout: two-cols
 ---
 
-**Para 2 — The Brag (Value Paragraph)**
-Two or three XYZ-style achievements. Connect your experience directly to what they need. This is the paragraph that wins interviews.
+# The 4-Paragraph Structure
 
----
+<div class="text-sm space-y-3 mt-4">
 
-**Para 3 — Why Them, Why You**
-Show you actually researched the company. Mention one specific thing that excites you about them. This is where most people go generic — don't.
+<div v-click class="rounded-xl p-3 border border-blue-400/30 bg-blue-900/10">
+  <div class="text-blue-300 font-bold text-xs mb-1">Para 1 — Who You Are</div>
+  <div class="opacity-60 text-xs italic">"As a recent NYSC graduate with hands-on experience in digital marketing, I was genuinely excited to find the Marketing Associate role at your company."</div>
+</div>
 
----
+<div v-click class="rounded-xl p-3 border border-green-400/30 bg-green-900/10">
+  <div class="text-green-300 font-bold text-xs mb-1">Para 2 — The Brag</div>
+  <div class="opacity-60 text-xs">2–3 XYZ achievements. Connect directly to their needs. This paragraph wins interviews.</div>
+</div>
 
-**Para 4 — Call to Action**
-Thank them, express availability for an interview. Keep it confident, not desperate.
+<div v-click class="rounded-xl p-3 border border-purple-400/30 bg-purple-900/10">
+  <div class="text-purple-300 font-bold text-xs mb-1">Para 3 — Why Them</div>
+  <div class="opacity-60 text-xs">Name one specific thing about the company that genuinely excites you. Research first. Don't go generic here.</div>
+</div>
 
-</v-clicks>
+<div v-click class="rounded-xl p-3 border border-yellow-400/30 bg-yellow-900/10">
+  <div class="text-yellow-300 font-bold text-xs mb-1">Para 4 — Call to Action</div>
+  <div class="opacity-60 text-xs">Thank them. Express availability for an interview. Confident — not desperate.</div>
+</div>
 
 </div>
 
-<div v-click class="bg-green-900 bg-opacity-20 rounded p-4">
+::right::
+
+<div class="ml-8 mt-4">
+
+<v-click>
+
+<div class="rounded-xl p-5 bg-white/5 border border-white/10 text-sm">
 
 ### The Golden Rule
 
 **Brag with proof, not arrogance.**
 
-You're not saying *"I'm the best candidate"* — you're saying *"here is evidence of what I've done, and here is why that's relevant to you."*
+<div class="mt-3 text-xs opacity-60 leading-relaxed space-y-2">
 
-There's a big difference.
+<div>You're not saying <em>"I'm the best candidate."</em></div>
 
-One sounds entitled. The other sounds confident.
+<div>You're saying <em>"Here is evidence of what I've achieved — and here is why it's directly relevant to this role."</em></div>
+
+<div class="mt-2">One sounds entitled. The other sounds confident. There's a big difference.</div>
 
 </div>
+
+</div>
+
+</v-click>
 
 </div>
 
@@ -435,51 +472,38 @@ One sounds entitled. The other sounds confident.
 layout: section
 ---
 
-# Part 3: Online Safety in Job Applications
+<div class="text-red-300 text-xs font-semibold uppercase tracking-widest mb-3">Part 3</div>
 
-*The stuff nobody talks about until it's too late*
+# Staying Safe Online
+
+*The landmines nobody warns you about — until it's too late*
 
 ---
 
-# The Job Hunt is Full of Landmines
+# The Job Hunt Makes You a Target
 
-<div class="mt-4 text-base">
-
-Every scammer knows that job seekers are anxious, distracted, and checking their email obsessively. That makes you a target.
-
-</div>
+<div class="text-xs mt-2 opacity-60">Scammers know you're anxious, distracted, and checking your email obsessively. That makes you vulnerable.</div>
 
 <div class="grid grid-cols-2 gap-4 mt-4 text-sm">
 
-<div v-click class="border border-red-400 rounded p-3">
-
-### 🎣 Phishing
-Fake emails from "companies" — *"Congratulations! You've been shortlisted — click here to accept your offer."*
-
-They steal your login details, banking info, or install malware.
-
+<div v-click class="rounded-xl p-4 border border-red-400/40 bg-red-900/10">
+  <div class="font-bold text-red-300 text-sm mb-2">🎣 Phishing</div>
+  <div class="text-xs opacity-60">"Congratulations! You've been shortlisted — click here to accept." They steal your credentials or install malware the moment you click.</div>
 </div>
 
-<div v-click class="border border-red-400 rounded p-3">
-
-### 🐛 Worms & RATs
-**Worms** spread automatically and infect everything.
-**RATs (Remote Access Trojans)** give hackers full control of your device — screen, camera, passwords, everything.
-
+<div v-click class="rounded-xl p-4 border border-red-400/40 bg-red-900/10">
+  <div class="font-bold text-red-300 text-sm mb-2">🐛 Worms & RATs</div>
+  <div class="text-xs opacity-60"><strong>Worms</strong> spread and infect automatically. <strong>RATs (Remote Access Trojans)</strong> hand hackers full control — your screen, camera, keystrokes, saved passwords.</div>
 </div>
 
-<div v-click class="border border-orange-400 rounded p-3">
-
-### 📄 PDF & Image Hijacking
-22% of malicious email attachments are PDFs. A "job offer letter" that's actually malware. Hidden links, QR codes, JavaScript embedded inside.
-
+<div v-click class="rounded-xl p-4 border border-orange-400/40 bg-orange-900/10">
+  <div class="font-bold text-orange-300 text-sm mb-2">📄 PDF & Image Hijacking</div>
+  <div class="text-xs opacity-60">22% of malicious email attachments are PDFs. A "job offer letter" with hidden links, QR codes, or embedded JavaScript. Opening it is enough.</div>
 </div>
 
-<div v-click class="border border-orange-400 rounded p-3">
-
-### 🌐 Typo-Squatting
-Fake sites like `linkdin.com`, `jobberman.ng.co`, `andelaa.com`. You think you're applying. You're handing over your data.
-
+<div v-click class="rounded-xl p-4 border border-orange-400/40 bg-orange-900/10">
+  <div class="font-bold text-orange-300 text-sm mb-2">🌐 Typo-Squatting</div>
+  <div class="text-xs opacity-60">Fake sites: <code>linkdin.com</code>, <code>jobberman.ng.co</code>, <code>andelaa.com</code>. You think you're applying. You're handing your data to a scammer.</div>
 </div>
 
 </div>
@@ -488,83 +512,94 @@ Fake sites like `linkdin.com`, `jobberman.ng.co`, `andelaa.com`. You think you'r
 
 # More Threats Worth Knowing
 
-<div class="grid grid-cols-2 gap-6 mt-6 text-sm">
+<div class="grid grid-cols-2 gap-5 mt-5 text-sm">
 
-<div>
+<div v-click class="rounded-xl p-4 border border-white/10 bg-white/5">
 
-<v-click>
+### 📧 Email Masking
 
-### 📧 Email Masking & Spam
-Scammers send from addresses like `hr@outlook.com` or `recruitment.gtb@gmail.com`.
+Scammers send from `hr@outlook.com` or `recruitment.gtb@gmail.com`.
 
-Real companies use their own domain. `hr@guarantytrust.com` is real. `hr.gtbank@gmail.com` is not.
+Real companies use their own domain.
 
-**Always check the actual sender address — not just the display name.**
+<div class="mt-3 font-mono text-xs space-y-1">
+  <div class="text-green-400">✅ hr@guarantytrust.com</div>
+  <div class="text-red-400">❌ hr.gtbank@gmail.com</div>
+</div>
 
-</v-click>
+<div class="mt-2 text-xs opacity-60 font-semibold">Check the actual sender address — not the display name.</div>
 
 </div>
 
-<div>
-
-<v-click>
+<div v-click class="rounded-xl p-4 border border-white/10 bg-white/5">
 
 ### 📱 Fake & Modded Apps
-"Premium LinkedIn for free", "WhatsApp Business Pro", cracked job alert apps from random sites.
 
-They're almost always packed with spyware. If you didn't pay for a paid product, someone else is — with your data.
+"Free Premium LinkedIn", cracked job-alert apps, modded WhatsApp from random websites.
 
-</v-click>
+Almost always packed with spyware.
+
+<div class="mt-3 text-xs opacity-60">If you didn't pay for a premium product, <strong>someone else is — with your data.</strong></div>
+
+<div class="mt-2 text-xs opacity-40">Only install from Google Play or the App Store.</div>
 
 </div>
 
 </div>
 
 <v-click>
-
-<div class="mt-6 bg-red-900 bg-opacity-30 rounded p-3">
-
-**The uncomfortable truth:** 68% of all cyberattacks begin in your inbox. The job hunt puts you in the inbox constantly. Stay sharp.
-
+<div class="mt-4 rounded-xl p-3 border border-red-500/30 bg-red-900/15 text-xs text-red-200">
+  ⚠️ <strong>68% of all cyberattacks start in your inbox.</strong> The job hunt keeps you there constantly. Every unsolicited email is a potential threat.
 </div>
-
 </v-click>
 
 ---
 
-# Your Online Safety Rules — Non-Negotiable
+# Your Non-Negotiable Safety Rules
 
-<div class="grid grid-cols-2 gap-4 mt-4 text-sm">
+<div class="grid grid-cols-2 gap-5 mt-4 text-sm">
 
-<div>
+<div class="space-y-1">
 
 <v-clicks>
 
-- 🚫 Never click links in unsolicited emails — go directly to the company's official website
-- 📞 Verify every job offer by calling the official company number (find it yourself — don't call the number in the email)
-- 🏢 Use only official job portals: LinkedIn, Jobberman, MyJobMag, Glassdoor
-- 🔐 Enable 2FA on every account — email, LinkedIn, banking, everything
-- 🔑 Use a unique password for each account + a password manager (Google Password Manager is free)
-- 🛡 Scan every download with antivirus before opening (Windows Defender works fine if it's updated)
+<div class="flex gap-2 items-start py-2 border-b border-white/10 text-xs">
+  <span>🚫</span><span>Never click links in unsolicited emails — go to the company website directly</span>
+</div>
+<div class="flex gap-2 items-start py-2 border-b border-white/10 text-xs">
+  <span>📞</span><span>Verify every offer by calling the official company number — find it yourself</span>
+</div>
+<div class="flex gap-2 items-start py-2 border-b border-white/10 text-xs">
+  <span>🏢</span><span>Official portals only: LinkedIn, Jobberman, MyJobMag, Glassdoor, NGCareers</span>
+</div>
+<div class="flex gap-2 items-start py-2 border-b border-white/10 text-xs">
+  <span>🔐</span><span>Enable 2FA on everything — email, LinkedIn, banking, social media</span>
+</div>
+<div class="flex gap-2 items-start py-2 border-b border-white/10 text-xs">
+  <span>🔑</span><span>Unique password per account + password manager (Google Password Manager is free)</span>
+</div>
+<div class="flex gap-2 items-start py-2 text-xs">
+  <span>🛡</span><span>Scan every download before opening — Windows Defender is fine if it's updated</span>
+</div>
 
 </v-clicks>
 
 </div>
 
-<div v-click>
+<div v-click class="rounded-xl p-4 bg-blue-900/15 border border-blue-500/30 text-xs">
 
-### Managing Your Email Professionally
+### 📬 Email Setup for Job Hunting
 
-- Use a clean, professional address: `firstname.lastname@gmail.com`
-- Create a dedicated **Job Applications** folder to stay organised
-- Keep a backup email and phone number linked to recovery
-- Store recovery codes somewhere safe and offline
-- **Never share OTPs** — no real recruiter will ever ask for one
+<div class="space-y-2 mt-3 opacity-70">
+  <div>✅ Use <code>firstname.lastname@gmail.com</code></div>
+  <div>✅ Create a dedicated <strong>Job Applications</strong> folder</div>
+  <div>✅ Link a recovery email and phone number</div>
+  <div>✅ Store recovery codes offline</div>
+  <div>❌ Never share OTPs — no real recruiter ever asks</div>
+</div>
 
-<div class="mt-4 text-yellow-400 text-xs">
-
-A professional email isn't just safer — it's a signal. `cutegirl2k@yahoo.com` is not getting callbacks.
-
+<div class="mt-4 text-yellow-300 font-semibold">
+  A professional email is a first impression too. <code>cutegirl2k@yahoo.com</code> is not getting callbacks.
 </div>
 
 </div>
@@ -574,98 +609,48 @@ A professional email isn't just safer — it's a signal. `cutegirl2k@yahoo.com` 
 ---
 layout: center
 class: text-center
+transition: fade
 ---
 
-# Quick Recap Before We Wrap Up
+# Recap
 
-<div class="grid grid-cols-2 gap-6 mt-6 text-sm text-left max-w-2xl mx-auto">
+<div class="grid grid-cols-3 gap-4 mt-6 text-left max-w-3xl mx-auto text-sm">
 
-<div v-click>
-
-### CVs
-- Use XYZ in every bullet point
-- Tailor to every job, use their keywords
-- PDF format, clean font, 1–2 pages
-- Think about ATS before you think about design
-
+<div v-click class="rounded-xl p-4 bg-blue-900/15 border border-blue-500/30">
+  <div class="text-blue-300 font-bold mb-2">📄 CVs</div>
+  <div class="text-xs opacity-60 space-y-1">
+    <div>· XYZ in every bullet point</div>
+    <div>· Tailor to every job description</div>
+    <div>· PDF · clean font · 1–2 pages</div>
+    <div>· Beat ATS before you design</div>
+  </div>
 </div>
 
-<div v-click>
-
-### Cover Letters
-- Don't skip them — 70% of HMs read them
-- 4 paragraphs: intro, brag, why them, close
-- Brag with proof, not confidence alone
-
+<div v-click class="rounded-xl p-4 bg-green-900/15 border border-green-500/30">
+  <div class="text-green-300 font-bold mb-2">✉️ Cover Letters</div>
+  <div class="text-xs opacity-60 space-y-1">
+    <div>· Don't skip — 70% of HMs read them</div>
+    <div>· Intro · Brag · Why them · Close</div>
+    <div>· Proof beats arrogance every time</div>
+  </div>
 </div>
 
-<div v-click>
-
-### Online Safety
-- Verify before you click or download anything
-- Check sender domains, not display names
-- Use 2FA and unique passwords
-- Stick to official portals
-
-</div>
-
-<div v-click>
-
-### Mindset
-- The job hunt after NYSC is a numbers game — keep applying
-- One bad application won't ruin you, but complacency will
-- Stay consistent, stay safe, and go get that bag 🚀
-
-</div>
-
-</div>
-
----
-layout: center
-class: text-center
-transition: fade-out
----
-
-# 🎁 Raffle Draw Time!
-
-*Stay till the end — you might be going home with a prize*
-
-<div class="grid grid-cols-3 gap-6 mt-8 text-sm">
-
-<div v-click class="border border-yellow-400 rounded p-4">
-
-**1st Prize**
-🎓 Premium LinkedIn Learning
-1-month subscription
-
-</div>
-
-<div v-click class="border border-gray-400 rounded p-4">
-
-**2nd Prize (×2)**
-📄 Professional CV Review Vouchers
-Expert feedback on your CV
-
-</div>
-
-<div v-click class="border border-orange-400 rounded p-4">
-
-**3rd Prize (×3)**
-📶 Data Bundles
-Because job hunting eats data
-
+<div v-click class="rounded-xl p-4 bg-red-900/15 border border-red-500/30">
+  <div class="text-red-300 font-bold mb-2">🔐 Online Safety</div>
+  <div class="text-xs opacity-60 space-y-1">
+    <div>· Verify before you click or download</div>
+    <div>· Check domains, not display names</div>
+    <div>· 2FA + unique passwords</div>
+    <div>· Official portals only</div>
+  </div>
 </div>
 
 </div>
 
 <v-click>
-
-<div class="mt-8 opacity-60 text-sm">
-
-Winners drawn from participants who submitted questions in the WhatsApp group.
-
+<div class="mt-8 text-base font-semibold text-yellow-300">
+  Stay consistent. Stay safe. Go get that bag after NYSC. 🚀
 </div>
-
 </v-click>
 
 ---
@@ -673,17 +658,43 @@ layout: center
 class: text-center
 ---
 
-# Thank You!
+# 🎁 Raffle Draw!
 
-<div class="mt-6 text-lg opacity-80">
+<div class="text-xs opacity-50 mt-2">Winners drawn from participants who submitted questions in the WhatsApp group</div>
 
-Questions? Let's talk.
-There are no dumb questions here — only missed opportunities.
+<div class="grid grid-cols-3 gap-4 mt-8 text-sm max-w-2xl mx-auto">
+
+<div v-click class="rounded-xl p-5 border border-yellow-400/50 bg-yellow-900/15">
+  <div class="text-3xl mb-2">🥇</div>
+  <div class="font-bold text-yellow-300 mb-1">1st Prize</div>
+  <div class="text-xs opacity-60">LinkedIn Learning Premium — 1 month</div>
+</div>
+
+<div v-click class="rounded-xl p-5 border border-gray-400/40 bg-gray-800/20">
+  <div class="text-3xl mb-2">🥈</div>
+  <div class="font-bold text-gray-300 mb-1">2nd Prize ×2</div>
+  <div class="text-xs opacity-60">Professional CV Review Vouchers</div>
+</div>
+
+<div v-click class="rounded-xl p-5 border border-orange-400/50 bg-orange-900/15">
+  <div class="text-3xl mb-2">🥉</div>
+  <div class="font-bold text-orange-300 mb-1">3rd Prize ×3</div>
+  <div class="text-xs opacity-60">Data bundles — job hunting eats data</div>
+</div>
 
 </div>
 
-<div class="mt-8 text-sm opacity-60">
+---
+layout: center
+class: text-center
+---
 
-*Stay safe. Stay smart. Go get that bag after NYSC.* 🚀
+# Thank You! 🙏
 
+<div class="mt-5 text-lg opacity-70">Questions? I'm right here.</div>
+
+<div class="mt-2 text-sm opacity-40 italic">No dumb questions — only missed opportunities.</div>
+
+<div class="mt-10 text-xs opacity-30">
+  Stay safe · Stay sharp · Go get that bag 🚀
 </div>
