@@ -25,7 +25,7 @@ fonts:
   Land the job. Don't get scammed doing it.
 </div>
 
-<div class="mt-3 text-sm opacity-50">~45–60 mins · Q&A · Raffle Draw</div>
+<div class="mt-3 text-sm opacity-50">~45–60 mins · Q&A</div>
 
 <div @click="$slidev.nav.next" class="mt-10 inline-block px-6 py-2 border border-white/30 rounded-full text-sm cursor-pointer hover:bg-white/10 transition-colors">
   Let's get into it →
@@ -115,32 +115,32 @@ transition: slide-up
 
 # About Me
 
-<div class="text-sm leading-relaxed mt-4 space-y-4">
+<div class="text-sm leading-relaxed mt-4 space-y-3">
 
 <div v-click>
 
-**Software Engineer · ~10 Years in the Industry**
+**Adefemi Adeoye · @opeolluwa**
 
-I've been writing code and shipping products for nearly a decade — across startups, scale-ups, and remote teams spanning Nigeria, Europe, and North America.
+Backend & full-stack engineer, FUNAAB alumnus, and open-source contributor — nearly a decade building production systems and working with teams across Nigeria and internationally.
 
 </div>
 
 <div v-click>
 
-**What that actually looks like:**
-- Written code running in production for millions of users
-- Collaborated across timezones with engineers, PMs, and designers
-- Reviewed hundreds of CVs and sat on both sides of the hiring table
+**In the global Rust community:**
+- Editor, **This Week in Rust** — the biggest Rust newsletter worldwide
+- **RustConf 2026** Programme Committee member
+- Contributor to Rust ecosystem crates (Leptos and more)
 
 </div>
 
 <div v-click>
 
-**Why I'm here:**
+**Why I'm giving this talk:**
 
-After NYSC, nobody handed me a playbook. I made every mistake I'm about to warn you about — and figured the rest out the hard way.
+I built most of what I know the hard way — no mentor, no playbook, just trial and error after service year.
 
-Today, I'm handing you the shortcut.
+Today you get the shortcut.
 
 </div>
 
@@ -151,21 +151,21 @@ Today, I'm handing you the shortcut.
 <div class="ml-8 mt-4 space-y-3">
 
 <div v-click class="rounded-xl p-4 border border-white/10 bg-white/5 text-sm">
+  <div class="text-2xl mb-1">🦀</div>
+  <div class="font-semibold">Rust · Backend · Full-Stack</div>
+  <div class="opacity-50 text-xs mt-1">Distributed systems · Developer tooling</div>
+</div>
+
+<div v-click class="rounded-xl p-4 border border-white/10 bg-white/5 text-sm">
   <div class="text-2xl mb-1">🌍</div>
-  <div class="font-semibold">Global Teams</div>
-  <div class="opacity-50 text-xs mt-1">Nigeria · Europe · North America</div>
+  <div class="font-semibold">Open Source · Global Community</div>
+  <div class="opacity-50 text-xs mt-1">This Week in Rust · RustConf 2026</div>
 </div>
 
 <div v-click class="rounded-xl p-4 border border-white/10 bg-white/5 text-sm">
-  <div class="text-2xl mb-1">💻</div>
-  <div class="font-semibold">~10 Years in Tech</div>
-  <div class="opacity-50 text-xs mt-1">Startups to scale-ups</div>
-</div>
-
-<div v-click class="rounded-xl p-4 border border-white/10 bg-white/5 text-sm">
-  <div class="text-2xl mb-1">🎯</div>
-  <div class="font-semibold">Hiring Experience</div>
-  <div class="opacity-50 text-xs mt-1">Hundreds of CVs reviewed, interviews led</div>
+  <div class="text-2xl mb-1">📺</div>
+  <div class="font-semibold">@opeolluwa</div>
+  <div class="opacity-50 text-xs mt-1">GitHub · YouTube · X/Twitter</div>
 </div>
 
 </div>
