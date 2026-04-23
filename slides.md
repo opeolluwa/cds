@@ -43,7 +43,7 @@ class: text-center
 transition: fade
 ---
 
-<div class="text-3xl font-bold">Good afternoon, corps members! 👋</div>
+<div class="text-3xl font-bold">Good morning, everyone👋</div>
 
 
 
